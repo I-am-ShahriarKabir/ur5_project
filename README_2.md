@@ -106,7 +106,7 @@ The overall system is structured as follows:
 
 2. **Build the Custom Package:**
     ```bash
-    cd ~/Neura_task/catkin_ws
+    cd ~/ur5_project/catkin_ws
     catkin_make
     source devel/setup.bash
 
@@ -125,15 +125,11 @@ The overall system is structured as follows:
             The UR5 robot is spawned and controlled via the sine-wave commands.
 
         **Data Collector Node:**
-
-            Joint states are being recorded in a file named joint_data.csv (created in the node’s working directory, typically in the package’s src  folder since cwd="node" is used).
-            
-            If a camera is available and publishing on /camera/image_raw, a window titled "Camera View" will open displaying the feed.
-            
-            Real-time Visualization:
+           a. Joint states are being recorded in a file named joint_data.csv (created in the node’s working directory, typically in the package’s src  folder since cwd="node" is used).
+           b. If a camera is available and publishing on /camera/image_raw, a window titled "Camera View" will open displaying the feed.
+           c. Real-time Visualization:
                 rqt_plot is launched and plots the first element of the /joint_states/position array (i.e., the position of the first joint) in real time.
-
-            CSV File:
+           d. CSV File:
                 You can open joint_data.csv to inspect the logged joint states.
 
 
