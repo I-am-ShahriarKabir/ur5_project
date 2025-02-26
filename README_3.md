@@ -101,7 +101,7 @@ For this example, we predict the `shoulder_pan_joint` angle of the UR5 robot as 
 ### Steps to Run the Script
 - **Navigate to the ML Experiments Folder:**  
     ```bash
-    cd ~/Neura_task/ml_experiments
+    cd ~/ur5_project/ml_experiments
 
 - **Run the Script:**
     ```bash
