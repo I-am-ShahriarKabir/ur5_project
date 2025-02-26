@@ -8,7 +8,8 @@ This project demonstrates an end-to-end solution for simulating a UR5 robot in G
 
 Below is a diagram of the project's folder structure:
 
-Neura_task/
+```bash
+ur5_project/
 ├── README_1.md                # Documentation for Task 1 (Simulation)
 ├── README_2.md                # Documentation for Task 2 (Data Collection)
 ├── README_3.md                # Documentation for Task 3 (ML/AI)
@@ -33,8 +34,7 @@ Neura_task/
 │               └── joint_data.csv                # CSV file generated during runtime
 └── ml_experiments/            # Folder for ML/AI experiments
     └── ml_example.py          # Python script/notebook for data analysis and prediction
-
-
+```
 
 ---
 
@@ -68,4 +68,5 @@ Neura_task/
    - The remote was added, and the code was pushed:
         ```bash
         git remote add origin https://https://github.com/I-am-ShahriarKabir/ur5_project
+        git branch -M main
         git push -u origin main

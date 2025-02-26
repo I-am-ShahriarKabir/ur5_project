@@ -28,7 +28,7 @@ This project demonstrates an end-to-end solution for simulating a UR5 robot in G
 ## Project Directory Structure
 
 ```bash
-Neura_task/
+ur5_project/
 ├── README_1.md                # Task 1: UR5 Simulation and Control
 ├── README_2.md                # Task 2: Data Collection Pipeline
 ├── README_3.md                # Task 3: ML/AI Expansion
