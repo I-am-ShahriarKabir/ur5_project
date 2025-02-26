@@ -19,9 +19,9 @@ The task consists of the following components:
 2. **Universal Robot Packages:**  
    Clone the universal_robot repository into your Catkin workspace and build it:
    ```bash
-   cd ~/Neura_task/catkin_ws/src
+   cd ~/ur5_project/catkin_ws/src
    git clone https://github.com/ros-industrial/universal_robot.git
-   cd ~/Neura_task/catkin_ws
+   cd ~/ur5_project/catkin_ws
    catkin_make
    source devel/setup.bash
 
@@ -34,10 +34,12 @@ The task consists of the following components:
 4. **Custom Package Setup:**  
    The custom package ur5_controller was created with:
    ```bash
-   cd ~/Neura_task/catkin_ws/src
+   cd ~/ur5_project/catkin_ws/src
    catkin_create_pkg ur5_controller rospy std_msgs sensor_msgs trajectory_msgs
 
 Inside ur5_controller, the following directory structure is used:
+
+```bash
 ur5_controller/
 ├── CMakeLists.txt
 ├── package.xml
@@ -46,6 +48,7 @@ ur5_controller/
 └── src/
     ├── ur5_sine_wave_publisher.py
     └── ur5_sine_wave_commander.py
+```
 
 ## File Descriptions
 
@@ -87,7 +90,7 @@ ur5_controller/
 
 1. **Build the Workspace:**
     ```bash
-    cd ~/Neura_task/catkin_ws
+    cd ~/ur5_project/catkin_ws
     catkin_make
     source devel/setup.bash
 
