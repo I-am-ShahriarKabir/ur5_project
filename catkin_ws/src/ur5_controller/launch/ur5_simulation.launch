@@ -1,0 +1,13 @@
+<launch>
+  <!-- Launch the Gazebo simulation (UR5 simulation from the universal_robot package) -->
+  <include file="$(find ur_gazebo)/launch/ur5_bringup.launch" />
+  
+  <!-- Launch the sine-wave commander node (this commands the robot) -->
+  <node pkg="ur5_controller" type="ur5_sine_wave_commander.py" name="ur5_sine_wave_commander" output="screen" />
+  
+  <!-- Launch the data collection node (this collects joint states and camera images) -->
+  <node pkg="ur5_controller" type="data_collector.py" name="data_collector" output="screen" cwd="node" />
+
+  <!-- Launch rqt_plot to visualize joint state positions, position[0] for example here (shows a sine curve) -->
+  <node pkg="rqt_plot" type="rqt_plot" name="rqt_plot" args="/joint_states/position[0]" output="screen" />
+</launch>
