@@ -20,10 +20,10 @@ This project demonstrates an end-to-end solution for simulating a UR5 robot in G
   - Evaluates model performance using metrics such as MSE, MAE, and R², and visualizes actual vs. predicted data.
   _See [README_3.md](README_3.md) for details._
 
-- **Task 4: Project Organization & Git Setup**  
+- **Finally: Project Organization & Git Setup**  
   - Organizes the project into a well-structured folder with `src`, `include`, `launch`, and configuration files (CMakeLists.txt, package.xml).
   - The project is pushed to GitHub as a complete repository.  
-  _See [README_4.md](README_4_git_dir.md) for details._
+  _See [README_4_git_dir.md](README_4_git_dir.md) for details._
 
 ## Project Directory Structure
 
